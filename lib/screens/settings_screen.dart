@@ -17,6 +17,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
   // bool isDarkmode = false;
   // int gender = 1;
   // String name = 'Pedro';
+  var a = 1;
 
   @override
   Widget build(BuildContext context) {
