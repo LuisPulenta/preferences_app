@@ -18,14 +18,14 @@ class HomeScreen extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
           Text('isDarkMode: ${Preferences.isDarkmode}'),
-          Divider(),
+          const Divider(),
           Text('Género: ${Preferences.gender}'),
-          Divider(),
+          const Divider(),
           Text('Nombre del Usuario: ${Preferences.name}'),
-          Divider(),
+          const Divider(),
         ],
       ),
-      drawer: SideMenuScreen(),
+      drawer: const SideMenuScreen(),
     );
   }
 }

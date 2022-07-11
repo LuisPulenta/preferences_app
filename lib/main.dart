@@ -14,7 +14,7 @@ void main() async {
         ChangeNotifierProvider(
             create: (_) => ThemeProvider(isDarkmode: Preferences.isDarkmode))
       ],
-      child: MyApp(),
+      child: const MyApp(),
     ),
   );
 }
