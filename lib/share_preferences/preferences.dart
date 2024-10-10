@@ -7,10 +7,12 @@ class Preferences {
   static bool _isDarkmode = false;
   static int _gender = 1;
 
+//----------------------------------------------------
   static Future init() async {
     _prefs = await SharedPreferences.getInstance();
   }
 
+//----------------------------------------------------
   static String get name {
     return _prefs.getString('name') ?? _name;
   }
@@ -20,6 +22,7 @@ class Preferences {
     _prefs.setString('name', name);
   }
 
+//----------------------------------------------------
   static bool get isDarkmode {
     return _prefs.getBool('isDarkmode') ?? _isDarkmode;
   }
@@ -29,6 +32,7 @@ class Preferences {
     _prefs.setBool('isDarkmode', isDarkmode);
   }
 
+//----------------------------------------------------
   static int get gender {
     return _prefs.getInt('gender') ?? _gender;
   }

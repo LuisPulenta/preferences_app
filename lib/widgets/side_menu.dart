@@ -38,6 +38,7 @@ class SideMenuScreen extends StatelessWidget {
   }
 }
 
+//-----------------------------------------------------------------
 class _DrawerHeader extends StatelessWidget {
   const _DrawerHeader({
     Key? key,
@@ -46,12 +47,12 @@ class _DrawerHeader extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return DrawerHeader(
-      child: Container(),
       decoration: const BoxDecoration(
           image: DecorationImage(
         image: AssetImage('assets/menu-img.jpg'),
         fit: BoxFit.cover,
       )),
+      child: Container(),
     );
   }
 }
